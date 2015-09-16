@@ -64,7 +64,8 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'plasticboy/vim-markdown'
 " shows colors in css files
 Plugin 'ap/vim-css-color'
-
+" run tests automagically (mocha, rspec, etc)
+Plugin 'janko-m/vim-test'
 
 map <F2> :NERDTreeToggle<CR>
 
