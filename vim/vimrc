@@ -29,6 +29,14 @@ noremap <C-k> <C-W>k<C-W>_
 noremap <C-h> <C-W>h<C-W>_
 noremap <C-l> <C-W>l<C-W>_
 
+" vim-test {
+  let test#javascript#mocha#options = '--reporter dot --no-colors --require app/assets/javascripts/tests/setup.js'
+  let test#strategy = "dispatch"
+  nmap <silent> <leader>t :TestNearest<CR><CR>
+  nmap <silent> <leader>T :TestFile<CR><CR>
+  nmap <silent> <leader>l :TestLast<CR><CR>
+" }
+
 " set leader w as :w
 noremap <leader>w :w<CR>
 
@@ -64,6 +72,8 @@ Plugin 'junegunn/vim-easy-align'
 Plugin 'plasticboy/vim-markdown'
 " shows colors in css files
 Plugin 'ap/vim-css-color'
+" vim dispatch is used by vim test 
+Plugin 'tpope/vim-dispatch'
 " run tests automagically (mocha, rspec, etc)
 Plugin 'janko-m/vim-test'
 
