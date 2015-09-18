@@ -23,5 +23,4 @@ fi
 
 brew update
 brew install caskroom/cask/brew-cask
-
 exit 0

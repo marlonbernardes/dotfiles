@@ -1,0 +1,5 @@
+--ignore-dir=.idea/
+--ignore-dir=node_modules/
+
+--type-add=css=.scss,.less
+--type-add=jsx=.jsx

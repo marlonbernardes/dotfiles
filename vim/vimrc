@@ -74,6 +74,8 @@ Plugin 'ap/vim-css-color'
 Plugin 'tpope/vim-dispatch'
 " run tests automagically (mocha, rspec, etc)
 Plugin 'janko-m/vim-test'
+" ack plugin, for searching
+Plugin 'mileszs/ack.vim'
 
 map <F2> :NERDTreeToggle<CR>
 
