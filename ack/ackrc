@@ -1,5 +1,8 @@
 --ignore-dir=.idea/
 --ignore-dir=node_modules/
+--ignore-file=match:.log
+--ignore-file=match:.tags
+--ignore-file=match:tags
 
 --type-add=css=.scss,.less
 --type-add=jsx=.jsx
