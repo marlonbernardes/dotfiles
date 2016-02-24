@@ -27,6 +27,19 @@ noremap <C-k> <C-W>k<C-W>_
 noremap <C-h> <C-W>h<C-W>_
 noremap <C-l> <C-W>l<C-W>_
 
+" CtrlP {
+  let g:ctrlp_by_filename = 1
+  let g:ctrlp_max_files = 0
+  let g:ctrlp_working_path_mode = 'raw'
+  let g:ctrlp_user_command = {
+   \ 'types': {
+      \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
+     \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+   \ },
+   \ 'fallback': 'find %s -type f'
+  \}
+" }
+
 " vim-test {
   let test#javascript#mocha#options = '--reporter dot --no-colors --require app/assets/javascripts/tests/setup.js'
   let test#strategy = "dispatch"
