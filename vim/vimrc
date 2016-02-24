@@ -18,10 +18,7 @@
   set foldlevel=99
 " }
 
-
-
 " CtrlP {
-
   " Use filename as the default search method
   let g:ctrlp_by_filename = 1
   let g:ctrlp_max_files = 0
@@ -35,21 +32,17 @@
    \ },
    \ 'fallback': 'find %s -type f'
   \}
-
 " }
 
 " vim-test {
-
   let test#javascript#mocha#options = '--reporter dot --no-colors --require app/assets/javascripts/tests/setup.js'
   let test#strategy = "dispatch"
   nmap <silent> <leader>t :TestNearest<CR><CR>
   nmap <silent> <leader>T :TestFile<CR><CR>
   nmap <silent> <leader>l :TestLast<CR><CR>
-
 " }
 
 " Remaps {
-
   " set leader w as :w
   noremap <leader>w :w<CR>
 
@@ -73,14 +66,12 @@
 
   " reload vim
   map <silent> <leader>r :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
-
 " }
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 " Plugins {
-
   " let Vundle manage Vundle, required
   Plugin 'gmarik/Vundle.vim'
   " syntax checker
