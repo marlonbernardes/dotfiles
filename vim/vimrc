@@ -1,22 +1,22 @@
-set nocompatible
-filetype off
-syntax enable
-set background=dark
-set expandtab
-set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
-set number
-set list
-set hlsearch
+" Default settings {
+  let mapleader = "\<Space>"
+  set nocompatible
+  filetype off
+  syntax enable
+  set background=dark
+  set expandtab
+  set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+  set number
+  set list
+  set hlsearch
+" }
 
-
-" visual mode: don't deselect text when identing
-vnoremap > >gv
-vnoremap < <gv
-
-let mapleader = "\<Space>"
-
-" leader y as yank to OS clipboard
-vmap <leader>y "+y
+" Fold settings {
+  set foldenable
+  set foldmethod=indent
+  set foldnestmax=10
+  set foldlevel=99
+" }
 
 " reload vim
 map <silent> <leader>r :source ~/.vimrc<CR>:filetype detect<CR>:exe ":echo 'vimrc reloaded'"<CR>
