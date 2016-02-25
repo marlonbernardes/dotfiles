@@ -64,10 +64,18 @@
 
 " Navigation {
   " set mapping to navigate between open split windows
-  noremap <C-J> <C-W>j<C-W>_
-  noremap <C-k> <C-W>k<C-W>_
-  noremap <C-h> <C-W>h<C-W>_
-  noremap <C-l> <C-W>l<C-W>_
+  nnoremap <C-j> <C-w>j
+  nnoremap <C-k> <C-w>k
+  nnoremap <C-h> <C-w>h
+  nnoremap <C-l> <C-w>l
+
+  " OSX Only: use option + {h,j,k,l} to resize the current window in a smart way
+  " (using percentages instead of a fixed value)
+  nnoremap <silent> ∆ :exe "resize " . (winheight(0) * 3/2)<CR>
+  nnoremap <silent> ˚ :exe "resize " . (winheight(0) * 2/3)<CR>
+  nnoremap <silent> ¬ :exe "vertical resize +15"<CR>
+  nnoremap <silent> ˙ :exe "vertical resize -15"<CR>
+
 " }
 
 set rtp+=~/.vim/bundle/Vundle.vim
