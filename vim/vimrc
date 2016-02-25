@@ -9,6 +9,7 @@
   set number
   set list
   set hlsearch
+  colorscheme atom-dark-256
 " }
 
 " Fold settings {
@@ -116,7 +117,6 @@ call vundle#begin()
   Plugin 'mileszs/ack.vim'
 " }
 
-colorscheme atom-dark-256
 
 call vundle#end()
 filetype plugin indent on
