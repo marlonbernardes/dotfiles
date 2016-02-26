@@ -20,6 +20,12 @@ fi
 mkdir -p $HOME/.vim/colors
 cp $DIR/colors/* $HOME/.vim/colors/
 
+if [ ! -L "$HOME/.vim/snippets" ]; then
+  echo "Configuring custom snippets..."
+  ln -s $DIR/snippets $HOME/.vim/snippets
+  echo "Snippets configured successfuly."
+fi
+
 # Installs Vundle plugins
 echo "Installing Vundle plugins..."
 vim +PluginInstall +qall

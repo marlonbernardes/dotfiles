@@ -115,6 +115,10 @@ call vundle#begin()
   Plugin 'janko-m/vim-test'
   " ack plugin, for searching
   Plugin 'mileszs/ack.vim'
+  " snippet plugin (SnipMate) and its dependencies
+  Plugin 'MarcWeber/vim-addon-mw-utils'
+  Plugin 'tomtom/tlib_vim'
+  Plugin 'garbas/vim-snipmate'
 " }
 
 
