@@ -23,4 +23,5 @@ fi
 
 brew update
 brew install caskroom/cask/brew-cask
+brew instal the_silver_searcher
 exit 0

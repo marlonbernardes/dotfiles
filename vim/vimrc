@@ -130,6 +130,10 @@ call vundle#begin()
   Plugin 'MarcWeber/vim-addon-mw-utils'
   Plugin 'tomtom/tlib_vim'
   Plugin 'garbas/vim-snipmate'
+
+  " Plugin for searching using the Ag command, requires the_silver_searcher
+  " package (available on homebrew)
+  Plugin 'rking/ag.vim'
 " }
 
 
