@@ -50,6 +50,7 @@
   " set leader q as :q
   noremap <leader>q :q<CR>
 
+  " Toggle NERDTree with F2
   map <F2> :NERDTreeToggle<CR>
 
   " visual mode: don't deselect text when identing
