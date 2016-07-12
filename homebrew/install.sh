@@ -26,4 +26,6 @@ brew install caskroom/cask/brew-cask
 brew install the_silver_searcher
 brew cask install iterm2
 brew cask install spectacle
+brew cask install seil
+brew cask install karabiner
 exit 0
