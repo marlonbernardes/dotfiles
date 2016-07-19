@@ -29,4 +29,6 @@ brew cask install spectacle
 brew cask install seil
 brew cask install karabiner
 brew install tig
+brew install python3
+brew install awscli
 exit 0
