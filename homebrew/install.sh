@@ -28,5 +28,5 @@ brew cask install iterm2
 brew cask install spectacle
 brew cask install seil
 brew cask install karabiner
-brew cask install tig
+brew install tig
 exit 0
