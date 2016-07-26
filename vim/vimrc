@@ -50,8 +50,9 @@
   " set leader q as :q
   noremap <leader>q :q<CR>
 
-  " Toggle NERDTree with F2
+  " Toggle NERDTree with F2, reveal file with F6
   map <F2> :NERDTreeToggle<CR>
+  map <F6> :NERDTreeFind<CR>
 
   " visual mode: don't deselect text when identing
   vnoremap > >gv
