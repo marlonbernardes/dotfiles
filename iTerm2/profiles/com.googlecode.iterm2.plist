@@ -264,7 +264,7 @@
 	<key>NSWindow Frame Preferences</key>
 	<string>269 298 606 456 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1 377 585 398 0 0 1280 777 </string>
+	<string>1281 424 1397 951 1280 350 1400 1027 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1547,6 +1547,8 @@
 	</dict>
 	<key>PrefsCustomFolder</key>
 	<string>/Users/mbernardes/dev/dotfiles/iTerm2/profiles</string>
+	<key>Print In Black And White</key>
+	<true/>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
