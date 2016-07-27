@@ -9,6 +9,7 @@
   set number
   set list
   set hlsearch
+  set colorcolumn=120
   colorscheme atom-dark-256
 " }
 
