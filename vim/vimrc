@@ -141,6 +141,9 @@ call vundle#begin()
   Plugin 'tomtom/tlib_vim'
   Plugin 'garbas/vim-snipmate'
 
+  " shows a git diff in the gutter (sign column)
+  Plugin 'airblade/vim-gitgutter'
+
   " Plugin for searching using the Ag command, requires the_silver_searcher
   " package (available on homebrew)
   Plugin 'rking/ag.vim'
