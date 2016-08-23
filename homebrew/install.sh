@@ -31,4 +31,7 @@ brew cask install karabiner
 brew install tig
 brew install python3
 brew install awscli
+
+# Vim with +clipboard support
+brew install vim
 exit 0
