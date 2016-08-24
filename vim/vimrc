@@ -11,6 +11,8 @@
   set hlsearch
   set colorcolumn=120
   colorscheme atom-dark-256
+  " Save files automatically when the focus is lost.
+  autocmd BufLeave,FocusLost * silent! wall
 " }
 
 " Fold settings {
