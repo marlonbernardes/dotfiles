@@ -10,7 +10,7 @@ zshCustomDir=$HOME/.oh-my-zsh/custom/
 
 if [ ! -L "$target" ]; then
   echo "Creating a symbolic link from $source to $target"
-  ln -s $source $target
+  ln -sf $source $target
 fi
 
 # Copy all themes to /themes
