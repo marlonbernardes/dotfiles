@@ -52,9 +52,12 @@
   autocmd StdinReadPre * let s:std_in=1
   autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
-  let NERDTreeShowHidden=1
+  let NERDTreeShowHidden = 1
 " }
 
+" vim-jsx {
+  let g:jsx_ext_required = 0
+"}
 
 " Remaps {
   " set leader w as :w
@@ -147,6 +150,9 @@ call vundle#begin()
   " Plugin for searching using the Ag command, requires the_silver_searcher
   " package (available on homebrew)
   Plugin 'rking/ag.vim'
+  " Added support for jsx files
+  Plugin 'pangloss/vim-javascript'
+  Plugin 'mxw/vim-jsx'
 " }
 
 
