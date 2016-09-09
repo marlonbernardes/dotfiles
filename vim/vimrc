@@ -1,7 +1,6 @@
 " Default settings {
   let mapleader = "\<Space>"
   set nocompatible
-  filetype off
   syntax enable
   set background=dark
   set expandtab
@@ -102,6 +101,7 @@
 
 " }
 
+filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
