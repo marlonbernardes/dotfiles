@@ -1,5 +1,11 @@
 #!/bin/bash
 
+if [ ! -a "$HOME/z.sh" ]; then
+  echo "Installing https://github.com/rupa/z"
+  curl https://raw.githubusercontent.com/rupa/z/master/z.sh > $HOME/z.sh
+  echo "Z installed successfully."
+fi
+
 # Install Oh-My-ZSH if it is not already installed
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 

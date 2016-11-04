@@ -55,3 +55,5 @@ plugins=(git)
 
 # User configuration
 source $ZSH/oh-my-zsh.sh
+
+source $HOME/z.sh
