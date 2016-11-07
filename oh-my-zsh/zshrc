@@ -57,4 +57,4 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source $HOME/z.sh
 
-alias weather='curl wttr.in/berlin'
+alias weather='function _weather() { curl wttr.in/${1:-Berlin}; };_weather'
