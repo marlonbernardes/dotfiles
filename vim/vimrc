@@ -153,6 +153,8 @@ call vundle#begin()
   " Added support for jsx files
   Plugin 'pangloss/vim-javascript'
   Plugin 'mxw/vim-jsx'
+  " (Beta) Plugin for importing js files
+  Plugin 'Galooshi/vim-import-js'
 " }
 
 
