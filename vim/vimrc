@@ -21,10 +21,6 @@
   set foldlevel=99
 " }
 
-" Supertab {
-  let g:SuperTabDefaultCompletionType = "<C-X><C-O>"
-" }
-
 " CtrlP {
   " Use filename as the default search method
   let g:ctrlp_by_filename = 1
