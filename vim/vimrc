@@ -47,6 +47,10 @@
   " Toggle NERDTree with F2, reveal file with F6
   map <F2> :NERDTreeToggle<CR>
   map <F6> :NERDTreeFind<CR>
+  " Toggle NERDTree with option + pipe (osx), reveal file with option + shift
+  " + pipe
+  map « :NERDTreeToggle<CR>
+  map » :NERDTreeFind<CR>
 
   " Open NERDTree automatically on startup if no file is specified
   autocmd StdinReadPre * let s:std_in=1
