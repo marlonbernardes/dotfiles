@@ -163,6 +163,8 @@ call vundle#begin()
   Plugin 'Galooshi/vim-import-js'
   " Vim HardTime
   Plugin 'takac/vim-hardtime'
+  " Multi cursors support (similar to SublimeText and Atom. Ctrl + N, P or X)
+  Plugin 'terryma/vim-multiple-cursors'
 " }
 
 
