@@ -342,6 +342,8 @@
 	</dict>
 	<key>HideScrollbar</key>
 	<true/>
+	<key>HotkeyMigratedFromSingleToMulti</key>
+	<true/>
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSNavLastRootDirectory</key>
@@ -382,18 +384,22 @@
 	<string>392 291 701 297 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
 	<string>269 298 606 456 0 0 1280 777 </string>
+	<key>NSWindow Frame ProfilesPanel</key>
+	<string>-240 1424 735 382 -586 800 1920 1057 </string>
 	<key>NSWindow Frame SUStatusFrame</key>
 	<string>440 326 400 129 0 0 1280 777 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>24 1126 700 622 -586 800 1920 1057 </string>
+	<string>292 116 700 622 0 0 1280 777 </string>
 	<key>NSWindow Frame SessionsPreferences</key>
-	<string>-317 913 606 456 -586 800 1920 1057 </string>
+	<string>1470 913 606 456 1334 800 1920 1057 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>66 1337 770 381 -586 800 1920 1057 </string>
+	<string>67 1261 918 416 -586 800 1920 1057 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>80 193 592 584 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>56 217 890 552 0 0 1280 777 </string>
+	<string>1334 817 1913 1040 1334 800 1920 1057 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>1335 800 1917 1056 1334 800 1920 1057 </string>
+	<string>4 189 890 573 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1761,6 +1767,8 @@
 	<integer>1</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1483964160</real>
 	<key>WordCharacters</key>
 	<string>/-+\~_.</string>
 	<key>findIgnoreCase_iTerm</key>
@@ -1768,7 +1776,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.9</string>
+	<string>3.1.beta.3</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>

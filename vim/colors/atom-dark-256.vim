@@ -1007,7 +1007,7 @@ elseif has("gui_running") || &t_Co == 88
     CSAHi Directory term=bold cterm=NONE ctermbg=bg ctermfg=84 gui=NONE guibg=bg guifg=#AAAAAA
     CSAHi ErrorMsg term=NONE cterm=NONE ctermbg=80 ctermfg=43 gui=NONE guibg=#232526 guifg=#92C5F7
     CSAHi IncSearch term=reverse cterm=reverse ctermbg=57 ctermfg=16 gui=reverse guibg=#000000 guifg=#C4BE89
-    CSAHi Search term=reverse cterm=NONE ctermbg=61 ctermfg=16 gui=NONE guibg=#B4EC85 guifg=#000000
+    CSAHi Search term=reverse cterm=NONE ctermbg=61 ctermfg=16 gui=NONE guibg=#eff7b8 guifg=#000000
     CSAHi MoreMsg term=bold cterm=bold ctermbg=bg ctermfg=45 gui=bold guibg=bg guifg=#A8FF60
     CSAHi ModeMsg term=bold cterm=bold ctermbg=bg ctermfg=45 gui=bold guibg=bg guifg=#A8FF60
     CSAHi LineNr term=underline cterm=NONE ctermbg=80 ctermfg=81 gui=NONE guibg=#232526 guifg=#465457
