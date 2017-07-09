@@ -31,7 +31,8 @@ brew cask install karabiner
 brew install tig
 brew install python3
 brew install awscli
-
+brew tap caskroom/eonts
+brew cask install font-fira-code
 # Vim with +clipboard support
 brew install vim
 exit 0
