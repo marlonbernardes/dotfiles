@@ -11,6 +11,7 @@
   set colorcolumn=120
   set splitright
   set splitbelow
+  set relativenumber
   colorscheme atom-dark-256
   " Save files automatically when the focus is lost.
   autocmd BufLeave,FocusLost * silent! wall
