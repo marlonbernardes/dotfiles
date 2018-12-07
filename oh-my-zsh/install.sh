@@ -19,6 +19,10 @@ if [ ! -L "$target" ]; then
   ln -sf $source $target
 fi
 
+mkdir -p $zshCustomDir/plugins/
+git clone https://github.com/zsh-users/zsh-autosuggestions $zshCustomDir/plugins/zsh-autosuggestions
+
+
 # Copy all themes to /themes
 mkdir -p $zshCustomDir/themes/
 cp $DIR/themes/* $zshCustomDir/themes/
