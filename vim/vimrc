@@ -3,6 +3,7 @@
   set nocompatible
   syntax enable
   set background=dark
+  set encoding=utf-8
   set expandtab
   set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
   set number
@@ -32,22 +33,6 @@
   let g:ycm_semantic_triggers['typescript'] = ['.']
 " }
 
-" configuring vim completion {
-  set completeopt=longest,menuone
-  inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-  inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-
-  inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-
-
-  inoremap <C-@> <C-x><C-o>
-  " Move up and down in autocomplete with <c-j> and <c-k>
-  inoremap <expr> <c-j> ("\<C-n>")
-  inoremap <expr> <c-k> ("\<C-p>")
-" }
-
 " Automatically sets paste mode when pasting code in insert mode {
   let &t_SI .= "\<Esc>[?2004h"
   let &t_EI .= "\<Esc>[?2004l"
@@ -60,9 +45,6 @@
     return ""
   endfunction
 " }
-
-let g:syntastic_html_checkers=['']
-let g:syntastic_check_on_open = 0
 
 " CtrlP {
   " Use filename as the default search method
