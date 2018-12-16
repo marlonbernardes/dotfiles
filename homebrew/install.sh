@@ -35,4 +35,6 @@ brew tap caskroom/eonts
 brew cask install font-fira-code
 # Vim with +clipboard support
 brew install vim
+# Needed by YouCompleteMe - vim plugin
+brew install cmake
 exit 0

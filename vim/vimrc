@@ -23,7 +23,14 @@
   set foldnestmax=10
   set foldlevel=99
 " }
-"
+
+" YouCompleteMe settings {
+  if !exists("g:ycm_semantic_triggers")
+    let g:ycm_semantic_triggers = {}
+  endif
+  " Trigger autocompletion for typescript after typing a "."
+  let g:ycm_semantic_triggers['typescript'] = ['.']
+" }
 
 " configuring vim completion {
   set completeopt=longest,menuone
@@ -34,7 +41,11 @@
   inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
-  inoremap <leader><leader> <C-x><C-o>
+
+  inoremap <C-@> <C-x><C-o>
+  " Move up and down in autocomplete with <c-j> and <c-k>
+  inoremap <expr> <c-j> ("\<C-n>")
+  inoremap <expr> <c-k> ("\<C-p>")
 " }
 
 " Automatically sets paste mode when pasting code in insert mode {
@@ -50,8 +61,6 @@
   endfunction
 " }
 
-
-let g:javascript_plugin_flow = 1
 let g:syntastic_html_checkers=['']
 let g:syntastic_check_on_open = 0
 
@@ -69,12 +78,6 @@ let g:syntastic_check_on_open = 0
    \ },
    \ 'fallback': 'find %s -type f'
   \}
-" }
-
-" vim-test {
-  nmap <silent> <leader>t :TestNearest<CR><CR>
-  nmap <silent> <leader>T :TestFile<CR><CR>
-  nmap <silent> <leader>l :TestLast<CR><CR>
 " }
 
 " NERDTree {
@@ -95,16 +98,13 @@ let g:syntastic_check_on_open = 0
   let g:NERDTreeMapOpenSplit = "c"
 " }
 
+" tsuquyomi (typescript) {
+  noremap <c-@> :TsuDefinition<CR><CR>
+" }
+
 " vim-jsx {
   let g:jsx_ext_required = 0
 "}
-
-" vim-flow {
-  " Use locally installed flow
-    let local_flow= getcwd() . "/node_modules/flow-bin/flow-osx-v0.55.0/flow"
-    let g:flow#flowpath = local_flow
-    let g:flow#autoclose = 1
-" }
 
 " Remaps {
   " set leader w as :w
@@ -180,10 +180,6 @@ call vundle#begin()
   Plugin 'plasticboy/vim-markdown'
   " shows colors in css files
   Plugin 'ap/vim-css-color'
-  " vim dispatch is used by vim test 
-  Plugin 'tpope/vim-dispatch'
-  " run tests automagically (mocha, rspec, etc)
-  Plugin 'janko-m/vim-test'
   " ack plugin, for searching
   Plugin 'mileszs/ack.vim'
   " snippet plugin (SnipMate) and its dependencies
@@ -204,10 +200,14 @@ call vundle#begin()
   Plugin 'takac/vim-hardtime'
   " Multi cursors support (similar to SublimeText and Atom. Ctrl + N, P or X)
   Plugin 'terryma/vim-multiple-cursors'
-  " Flow support for vim
-  Plugin 'flowtype/vim-flow'
+  " Typescript support for vim
+  Plugin 'Quramy/tsuquyomi'
   " Swap panes with <leader>ww + <leader>ww
   Plugin 'wesQ3/vim-windowswap'
+  " Syntax highlighting for typescript
+  Plugin 'leafgarland/typescript-vim'
+  " code-completion engine for vim (works great with typescript)
+  Plugin 'Valloric/YouCompleteMe'
 " }
 
 

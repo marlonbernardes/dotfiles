@@ -31,4 +31,9 @@ echo "Installing Vundle plugins..."
 vim +PluginInstall +qall
 echo "Plugins installed successfuly."
 
+# Installing YouCompleteMe
+echo "Installing YouCompleteMe"
+$HOME/.vim/bundle/YouCompleteMe/install.py --ts-completer
+echo "YouCompleteMe installed."
+
 echo "Vim setup successful."
