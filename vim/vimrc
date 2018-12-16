@@ -81,6 +81,7 @@
 " }
 
 " tsuquyomi (typescript) {
+  "  Navigate to definition with Ctrl + Space
   noremap <c-@> :TsuDefinition<CR><CR>
 " }
 
@@ -140,8 +141,8 @@ call vundle#begin()
 " Plugins {
   " let Vundle manage Vundle, required
   Plugin 'gmarik/Vundle.vim'
-  " syntax checker
-  Plugin 'scrooloose/syntastic'
+  " Syntax checker (Async linting engine)
+  Plugin 'w0rp/ale'
   " NERDTee
   Plugin 'scrooloose/nerdtree'
   " Smart defaults for vim (ex: incremental search, etc)
