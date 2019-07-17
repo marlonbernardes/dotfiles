@@ -9,13 +9,20 @@
   set number
   set list
   set hlsearch
-  set colorcolumn=120
   set splitright
   set splitbelow
-  set relativenumber
   colorscheme atom-dark-256
   " Save files automatically when the focus is lost.
   autocmd BufLeave,FocusLost * silent! wall
+" }
+
+" Tmux fixes {
+  set background=dark
+  set t_Co=256
+" }
+
+" Rainbow parantheses / brackets {
+  let g:rainbow_active = 1
 " }
 
 " Fold settings {
@@ -31,6 +38,7 @@
   endif
   " Trigger autocompletion for typescript after typing a "."
   let g:ycm_semantic_triggers['typescript'] = ['.']
+  let g:ycm_max_num_candidates = 10
 " }
 
 " Automatically sets paste mode when pasting code in insert mode {
@@ -191,6 +199,9 @@ call vundle#begin()
   Plugin 'leafgarland/typescript-vim'
   " code-completion engine for vim (works great with typescript)
   Plugin 'Valloric/YouCompleteMe'
+  " 
+  Plugin 'easymotion/vim-easymotion'
+  Plugin 'luochen1990/rainbow'
 " }
 
 
