@@ -26,9 +26,8 @@ brew install caskroom/cask/brew-cask
 brew install the_silver_searcher
 brew cask install iterm2
 brew cask install spectacle
-brew cask install seil
-brew cask install karabiner
 brew install tig
+brew install bat
 brew install python3
 brew install awscli
 brew tap caskroom/eonts
